@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { CustomerLoad, CustomerProvider } from './dataContexts/CustomerContext'
+
 import CalendarApp from './components/calendarApp'
 import CurrentOrderInfo from './components/currentOrderInfo'
 import CurrentOrderList from './components/currentOrderList'
@@ -18,7 +20,9 @@ function App() {
 
   return (
     
-    
+    <CustomerProvider>
+
+    <CustomerLoad />
     <div className = "mainContainer">
       <div className = "calendarContainer">
         <CalendarApp />
@@ -33,7 +37,7 @@ function App() {
         <RecentOrderList />
       </div> 
     </div>
-            
+    </CustomerProvider>       
   );
 }
 
