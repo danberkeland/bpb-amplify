@@ -1,20 +1,20 @@
 import React, { useContext, useEffect, useState } from 'react';
 
-//import { v4 as uuidv4 } from 'uuid';
-//import swal from '@sweetalert/with-react';
+import { v4 as uuidv4 } from 'uuid';
+import swal from '@sweetalert/with-react';
 
-//import { CurrentDataContext } from '../../dataContexts/CurrentDataContext';
-//import { CustomerContext } from '../../dataContexts/CustomerContext';
-//import { OrdersContext } from '../../dataContexts/OrdersContext';
-//import { StandingContext } from '../../dataContexts/StandingContext';
+import { CurrentDataContext } from '../../dataContexts/CurrentDataContext';
+import { CustomerContext } from '../../dataContexts/CustomerContext';
+import { OrdersContext } from '../../dataContexts/OrdersContext';
+import { StandingContext } from '../../dataContexts/StandingContext';
 
-//import { createRouteList, FindNewRoute } from '../../helpers/sortDataHelpers'
-//import { convertDatetoBPBDate, convertDatetoStandingDate } from '../../helpers/dateTimeHelpers'
+import { createRouteList, FindNewRoute } from '../../helpers/sortDataHelpers'
+import { convertDatetoBPBDate, convertDatetoStandingDate } from '../../helpers/dateTimeHelpers'
 
-//const clonedeep = require('lodash.clonedeep')
+const clonedeep = require('lodash.clonedeep')
 
 const Routes = () => {
-    /*
+
     const { customers } = useContext(CustomerContext)
     const { orders, setOrders } = useContext(OrdersContext)
     const { standing } = useContext(StandingContext)
@@ -101,15 +101,13 @@ const Routes = () => {
         setRoute(newRoute);
         }
     }
-    */
+
     return (
         <React.Fragment>
             <label>Routes:</label>
-            {/*
             <select id="routes" name="routes" value={route} onChange={handleChange} disabled={chosen ? false : true}>
             {routes ? routes.map(ro =>  <option id="routes" key={uuidv4()} name={ro}>{ro}</option>) : ''}
             </select>
-            */}
         </React.Fragment>
     );
 };

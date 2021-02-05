@@ -5,14 +5,17 @@
   "dependencies": {
     "@fullcalendar/daygrid": "^5.5.0",
     "@fullcalendar/react": "^5.5.0",
+    "@sweetalert/with-react": "^0.1.1",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "dotenv": "^8.2.0",
     "fullcalendar": "^5.5.1",
+    "lodash.clonedeep": "^4.5.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.2",
+    "sweetalert": "^2.1.2",
     "uuidv4": "^6.2.6",
     "web-vitals": "^1.0.1"
   },
