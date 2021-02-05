@@ -1,24 +1,41 @@
-import logo from './logo.svg';
+import React from 'react';
+
+import CalendarApp from './components/calendarApp'
+// import CurrentOrderInfo from './components/currentOrderInfo'
+// import CurrentOrderList from './components/currentOrderList'
+// import OrderCommandLine from './components/orderCommandLine'
+// import OrderEntryButtons from './components/orderEntryButtons'
+// import RecentOrderList from './components/recentOrderList';
+
+
 import './App.css';
 
+
+
+
+
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+    
+    <div className = "mainContainer">
+      <div className = "calendarContainer">
+        <CalendarApp />
+      </div>
+      {/*}
+      <div className = "centralContainer">
+        <OrderCommandLine /> 
+        <CurrentOrderInfo />  
+        <CurrentOrderList />    
+        <OrderEntryButtons />
+      </div> 
+      <div className = "rightContainer">
+        <RecentOrderList />
+      </div> 
+    */}  
     </div>
+            
   );
 }
 
