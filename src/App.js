@@ -5,7 +5,7 @@ import CurrentOrderInfo from './components/currentOrderInfo'
 import CurrentOrderList from './components/currentOrderList'
 import OrderCommandLine from './components/orderCommandLine'
 import OrderEntryButtons from './components/orderEntryButtons'
-// import RecentOrderList from './components/recentOrderList';
+import RecentOrderList from './components/recentOrderList';
 
 
 import './App.css';
@@ -30,9 +30,7 @@ function App() {
         <OrderEntryButtons />
       </div> 
       <div className = "rightContainer">
-        {/*}
         <RecentOrderList />
-        */}
       </div> 
     </div>
             
