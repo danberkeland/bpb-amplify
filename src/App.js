@@ -4,7 +4,7 @@ import CalendarApp from './components/calendarApp'
 import CurrentOrderInfo from './components/currentOrderInfo'
 import CurrentOrderList from './components/currentOrderList'
 import OrderCommandLine from './components/orderCommandLine'
-// import OrderEntryButtons from './components/orderEntryButtons'
+import OrderEntryButtons from './components/orderEntryButtons'
 // import RecentOrderList from './components/recentOrderList';
 
 
@@ -26,10 +26,8 @@ function App() {
       <div className = "centralContainer">
         <OrderCommandLine />
         <CurrentOrderInfo />  
-        <CurrentOrderList /> 
-         {/*}   
+        <CurrentOrderList />  
         <OrderEntryButtons />
-  */}
       </div> 
       <div className = "rightContainer">
         {/*}
