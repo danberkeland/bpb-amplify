@@ -2,18 +2,18 @@ import React, { useContext } from 'react';
 
 import { useEffect } from 'react/cjs/react.development';
 
-//import { CurrentDataContext } from '../../dataContexts/CurrentDataContext';
-//import { OrdersContext } from '../../dataContexts/OrdersContext';
-//import { StandingContext } from '../../dataContexts/StandingContext';
+import { CurrentDataContext } from '../../dataContexts/CurrentDataContext';
+import { OrdersContext } from '../../dataContexts/OrdersContext';
+import { StandingContext } from '../../dataContexts/StandingContext';
 
-//import { findCurrentPonote } from '../../helpers/sortDataHelpers';
-//import { convertDatetoBPBDate, convertDatetoStandingDate } from '../../helpers/dateTimeHelpers'
+import { findCurrentPonote } from '../../helpers/sortDataHelpers';
+import { convertDatetoBPBDate, convertDatetoStandingDate } from '../../helpers/dateTimeHelpers'
 
 
-//const clonedeep = require('lodash.clonedeep')
+const clonedeep = require('lodash.clonedeep')
 
 const PONotes = () => {
-    /*
+    
     const { orders, setOrders } = useContext(OrdersContext);
     const { standing } = useContext(StandingContext)
     const { chosen, delivDate, ponote, setPonote } = useContext(CurrentDataContext)
@@ -24,7 +24,7 @@ const PONotes = () => {
         setPonote(po)
 
     },[chosen, delivDate, setPonote, orders])
-
+    /*
     const handleNewPonote = (e) => {
         if (e.keyCode === 13) {
             setPonote(e.target.value)
@@ -92,9 +92,9 @@ const PONotes = () => {
     return (
         <React.Fragment>
             <label>PO/Notes:</label>
-            {/*
-            <input type="text" id="PONotes" name="PONotes" placeholder={ponote} onKeyUp={handleNewPonote} disabled={chosen ? false : true}></input>
-            */}
+            
+            <input type="text" id="PONotes" name="PONotes" placeholder={ponote} disabled={chosen ? false : true}></input>
+            
         </React.Fragment>
     );
 };
