@@ -1,9 +1,9 @@
 import React from 'react';
 
 import CalendarApp from './components/calendarApp'
-// import CurrentOrderInfo from './components/currentOrderInfo'
+import CurrentOrderInfo from './components/currentOrderInfo'
 // import CurrentOrderList from './components/currentOrderList'
-// import OrderCommandLine from './components/orderCommandLine'
+import OrderCommandLine from './components/orderCommandLine'
 // import OrderEntryButtons from './components/orderEntryButtons'
 // import RecentOrderList from './components/recentOrderList';
 
@@ -23,17 +23,19 @@ function App() {
       <div className = "calendarContainer">
         <CalendarApp />
       </div>
-      {/*}
       <div className = "centralContainer">
-        <OrderCommandLine /> 
+        <OrderCommandLine />
         <CurrentOrderInfo />  
+        {/*}
         <CurrentOrderList />    
         <OrderEntryButtons />
+  */}
       </div> 
       <div className = "rightContainer">
+        {/*}
         <RecentOrderList />
+        */}
       </div> 
-    */}  
     </div>
             
   );
