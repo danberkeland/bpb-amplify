@@ -9,8 +9,7 @@ import { StandingContext } from '../../dataContexts/StandingContext';
 import { findCurrentPonote } from '../../helpers/sortDataHelpers';
 import { convertDatetoBPBDate, convertDatetoStandingDate } from '../../helpers/dateTimeHelpers'
 
-
-const clonedeep = require('lodash.clonedeep')
+import { clonedeep } from 'lodash.clonedeep'
 
 const PONotes = () => {
     
